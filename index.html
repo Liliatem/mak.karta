@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="verify-admitad" content="288899091a" />
+  <title>Карта дня ✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      min-height: 100vh;
+      font-family: sans-serif;
+      background: black;
+      overflow-y: auto;
+      overflow-x: hidden;
+      color: white;
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top-title {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 28px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #f8bbd0;
+      text-shadow: 0 0 8px #ba68c8;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 36px;
+      color: #f8bbd0;
+      text-shadow: 0 0 10px #ba68c8, 0 0 20px #ce93d8;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease, opacity 0.5s ease;
+      opacity: 0;
+    }
+
+    img.show {
+      opacity: 1;
+      transform: scale(1.03);
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: #ffffff20;
+      color: #fff;
+      border: 1px solid white;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .description {
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+      text-align: left;
+      color: #fce4ec;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .description h2 {
+      color: #f8bbd0;
+      text-shadow: 0 0 5px #ba68c8;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .tech-button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #f8bbd030;
+      color: #fce4ec;
+      border: 1px solid #f8bbd0;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .tech-button:hover {
+      background-color: #fce4ec;
+      color: black;
+    }
+
+    footer.footer {
+      background-color: rgba(255, 255, 255, 0.08);
+      color: #fce4ec;
+      font-size: 14px;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+      z-index: 1;
+      position: relative;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 187, 208, 0.5);
+    }
+
+    footer.footer a {
+      color: #f8bbd0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer.footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+  body {
+    font-size: 18px; /* Увеличенный базовый размер */
+  }
+
+  .deck p {
+    font-size: 17px;
+  }
+
+  .deck a {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Звёзды -->
+  <div id="particles-js"></div>
+
+  <!-- Основное содержимое -->
+  <main>
+    <div class="top-title">МАК-КАРТЫ. КОЛОДА ОНЛАЙН</div>
+    <h1>✨ Ваша карта дня ✨</h1>
+
+    <img id="card" src="" alt="Карта" />
+    <button onclick="showRandomCard()">Показать другую карту</button>
+
+    <div class="description">
+      <h2>Техника «Карта дня»</h2>
+      <p>Это инструмент для концентрации и понимания своего текущего состояния.<br>
+      Вы выбираете одну случайную карту (или первую открытую на странице) — она помогает определить, на чём важно сосредоточиться именно сегодня.</p>
+      <p>С ней можно задать себе один из вопросов:</p>
+      <ul>
+        <li>На что сегодня стоит обратить внимание?</li>
+        <li>Что может дать ресурс или поддержку?</li>
+        <li>Где мой приоритет на сегодня?</li>
+        <li>Что я могу сделать полезного?</li>
+        <li>Что важно принять или получить?</li>
+      </ul>
+      <p>Методика не связана с предсказаниями.<br>
+      Это способ прояснить своё состояние и выделить главное на день — через образ, чувство или ассоциацию.</p>
+    </div>
+
+    <!-- КНОПКА ПОД ОПИСАНИЕМ -->
+    <a href="techniques.html" class="tech-button" target="_blank">🔮 Техники и колоды</a>
+  </main>
+
+  <!-- Контакты -->
+  <footer class="footer">
+    <p>📩 Telegram: <a href="https://t.me/Liafest" target="_blank" rel="noopener noreferrer">@Liafest</a></p>
+    <p>💖 Поддержать проект: 
+      <span title="Нажмите чтобы скопировать" onclick="copyCardNumber()" style="cursor: pointer; user-select: all; font-weight: bold;">
+        5188 9402 3143 9456
+      </span>
+    </p>
+    <p>© Автор Лия Криз. Спасибо за доверие 🌷</p>
+  </footer>
+
+  <!-- Скрипт звёзд -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <script>
+  tsParticles.load("particles-js", {
+    background: { color: { value: "#000000" } },
+    particles: {
+      number: { value: 200 },  // больше звёзд
+      color: { value: "#ffffff" },
+      shape: { type: "circle" },
+      opacity: { value: 0.6 },
+      size: { value: 2 },
+      move: {
+        enable: true,
+        speed: 0.3,
+        direction: "none",
+        outModes: { default: "bounce" }
+      },
+      links: {
+        enable: true,
+        distance: 130,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      }
+    },
+    interactivity: {
+      events: {
+        onHover: { enable: true, mode: "repulse" },
+        onClick: { enable: true, mode: "push" }
+      },
+      modes: {
+        repulse: { distance: 120 },
+        push: { quantity: 2 }
+      }
+    },
+    detectRetina: true
+  });
+</script>
+
+
+  <!-- Скрипт карт -->
+  <script>
+    const cards = [];
+    for (let i = 1; i <= 126; i++) {
+      cards.push(`images/${i}.jpg`);
+    }
+
+    function showRandomCard() {
+      const card = document.getElementById('card');
+      const idx = Math.floor(Math.random() * cards.length);
+      card.classList.remove('show');
+      setTimeout(() => {
+        card.src = cards[idx];
+        card.classList.add('show');
+      }, 100);
+    }
+
+    window.onload = showRandomCard;
+
+    function copyCardNumber() {
+      const number = "5188940231439456";
+      navigator.clipboard.writeText(number).then(() => {
+        alert("Номер карты скопирован: " + number);
+      });
+    }
+  </script>
+
+</body>
+</html>
