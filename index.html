@@ -194,7 +194,7 @@
     footer.footer a:hover {
       text-decoration: underline;
     }
-    @media (max-width: 600px) {
+   @media (max-width: 600px) {
   body {
     font-size: 18px; /* Увеличенный базовый размер */
   }
@@ -209,6 +209,14 @@
 
   h1 {
     font-size: 28px;
+  }
+
+  /* Добавим яркий фон для блока .description на мобилках */
+  .description {
+    background-color: rgba(255, 255, 255, 0.9) !important; /* почти белый, с прозрачностью */
+    color: #222 !important; /* темный цвет текста */
+    padding: 25px !important; /* чуть больше отступов */
+    border-radius: 15px !important; /* скругление */
   }
 }
 
