@@ -196,7 +196,7 @@
     }
    @media (max-width: 600px) {
   body {
-    font-size: 18px; /* Увеличенный базовый размер */
+    font-size: 18px;
   }
 
   .deck p {
@@ -211,31 +211,31 @@
     font-size: 28px;
   }
 
-  /* Темнее цвет заголовка "Техника «Карта дня»" */
+  /* Заголовок темнее, но не сильно */
   .description h2 {
-    color: #7a1f4a; /* темно-фиолетовый */
-    text-shadow: none;
+    color: #b66a8e; /* мягкий тёмно-розовый */
+    text-shadow: 0 0 3px #7a4a6a; /* лёгкое свечение */
     font-size: 24px;
     margin-bottom: 10px;
   }
 
-  /* Ярче кнопка "Техники и колоды" */
+  /* Кнопка оставляем как есть */
   .tech-button {
-    background-color: #f8bbd0cc; /* полупрозрачный насыщенный розовый */
-    color: #4a004a; /* тёмно-фиолетовый текст */
-    border: 1px solid #b85ea5; /* более заметная рамка */
+    background-color: #f8bbd0cc;
+    color: #4a004a;
+    border: 1px solid #b85ea5;
     font-weight: bold;
     transition: all 0.3s ease;
   }
   .tech-button:hover {
-    background-color: #ce93d8; /* светлый яркий оттенок при наведении */
+    background-color: #ce93d8;
     color: black;
   }
 
-  /* Ярче фон и текст футера с контактами */
+  /* Фон и текст футера более сбалансированы */
   footer.footer {
-    background-color: rgba(255, 187, 208, 0.3); /* светло-розовый фон */
-    color: #4a004a; /* тёмно-фиолетовый текст */
+    background-color: rgba(255, 187, 208, 0.15); /* светлый, но прозрачный розовый */
+    color: #f8bbd0; /* светло-розовый цвет */
     font-size: 14px;
     text-align: center;
     padding: 20px 10px;
@@ -246,10 +246,10 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(255, 187, 208, 0.7);
+    box-shadow: 0 0 10px rgba(255, 187, 208, 0.4);
   }
   footer.footer a {
-    color: #7a1f4a;
+    color: #f8bbd0;
     font-weight: bold;
     text-decoration: none;
   }
