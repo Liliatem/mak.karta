@@ -173,39 +173,51 @@
     }
 
     /* ПК: фиксированные кнопки в углах */
-    @media (min-width: 601px) {
-      .btn-home {
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        padding: 10px 20px;
-      }
+@media (min-width: 601px) {
+  .btn-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+  }
 
-      .btn-next {
-        position: fixed;
-        top: 20px; /* на 50px ниже */
-        right: 20px;
-        padding: 10px 20px;
-      }
-    }
+  .btn-next {
+    position: fixed;
+    top: 20px; /* ✅ теперь на одной линии с btn-home */
+    right: 20px;
+    padding: 10px 20px;
+  }
+}
 
-    /* Мобильные: кнопки блочные, одна под другой */
-    @media (max-width: 600px) {
-      .btn-home,
-      .btn-next {
-        position: static;
-        display: block;
-        width: 100%;
-        margin: 10px auto;
-        text-align: center;
-        font-size: 18px;
-        padding: 14px 0;
-      }
+/* Мобильные: кнопки блочные, одна под другой */
+@media (max-width: 600px) {
+  .btn-home,
+  .btn-next {
+    position: static;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 0;
+  }
 
-      #particles-js {
-        display: none;
-      }
-    }
+  #particles-js {
+    display: none;
+  }
+}
+
+/* ✅ Перенос строки только на мобилках */
+.mobile-br {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-br {
+    display: inline;
+  }
+}
+
     
 
   </style>
@@ -222,7 +234,8 @@
 
 
   <div class="container">
-    <h1>🌟 Техники с МАК-картами 🌟</h1>
+    <h1>🌟 Техники<span class="mobile-br"><br></span> с МАК-картами 🌟</h1>
+
 
     <div class="section-title">Раздел 1. Работа над личностным ростом и достижением целей</div>
 
