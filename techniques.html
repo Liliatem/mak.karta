@@ -215,6 +215,22 @@
 @media (max-width: 600px) {
   .mobile-br {
     display: inline;
+ 
+  }
+}
+.only-desktop {
+  display: block;
+}
+.only-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .only-desktop {
+    display: none;
+  }
+  .only-mobile {
+    display: block;
   }
 }
 
@@ -234,7 +250,9 @@
 
 
   <div class="container">
-    <h1>🌟 Техники<span class="mobile-br"><br></span> с МАК-картами 🌟</h1>
+    <h1 class="only-desktop">🌟 Техники с МАК-картами 🌟</h1>
+<h1 class="only-mobile">Техники с МАК-картами</h1>
+
 
 
     <div class="section-title">Раздел 1. Работа над личностным ростом и достижением целей</div>
