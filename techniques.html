@@ -2,37 +2,38 @@
 <html lang="ru">
 <head>
   <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(103229966, "init", {
+    ym(103229966, "init", {
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true,
         webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/103229966" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJPT5PK5S1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/103229966" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
 
-  gtag('config', 'G-RJPT5PK5S1');
-</script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJPT5PK5S1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RJPT5PK5S1');
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Техники с МАК-картами</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" />
-   <style>
+
+  <style>
     body {
       margin: 0;
       padding: 20px;
@@ -57,12 +58,6 @@
       pointer-events: none;
     }
 
-    @media (max-width: 768px) {
-      #particles-js {
-        display: none;
-      }
-    }
-
     h1 {
       text-align: center;
       color: #f8bbd0;
@@ -72,45 +67,6 @@
       text-shadow: 0 0 10px #ba68c8;
       position: relative;
       z-index: 1;
-    }
-
-    .btn-home,
-    .btn-next {
-      position: fixed;
-      top: 20px;
-      padding: 10px 20px;
-      background-color: #ffffff20;
-      color: #fff;
-      border: 1px solid white;
-      border-radius: 8px;
-      font-size: 16px;
-      font-family: 'Cinzel Decorative', cursive;
-      text-decoration: none;
-      cursor: pointer;
-      z-index: 10;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .btn-home:hover,
-    .btn-next:hover {
-      background-color: white;
-      color: black;
-    }
-
-    .btn-home {
-      left: 20px;
-    }
-
-    .btn-next {
-      right: 20px;
-    }
-
-    @media (max-width: 768px) {
-      .btn-home,
-      .btn-next {
-        font-size: 18px;
-        padding: 14px 24px;
-      }
     }
 
     .container {
@@ -189,33 +145,71 @@
     a:hover {
       color: #ce93d8;
     }
-  </style>
-  <style>
-  @media (max-width: 768px) {
+
+    /* ================== СТИЛИ КНОПОК ================== */
+
+    /* Общий стиль для обеих кнопок */
     .btn-home,
     .btn-next {
-      font-size: 17px;
-      padding: 12px 20px;
-      border-radius: 10px;
+      background-color: #ffffff20;
+      color: #fff;
+      border: 1px solid white;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: 'Cinzel Decorative', cursive;
+      text-decoration: none;
+      cursor: pointer;
+      z-index: 10;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      white-space: nowrap;
+      line-height: 1.2;
+      text-align: center;
     }
 
-    #particles-js {
-      display: none;
+    .btn-home:hover,
+    .btn-next:hover {
+      background-color: white;
+      color: black;
     }
-  }
 
-  /* Унифицированный стиль кнопок для всех устройств */
-  .btn-home,
-  .btn-next {
-    display: inline-block;
-    white-space: nowrap;
-    text-align: center;
-    line-height: 1.2;
-  }
-  
-</style>
+    /* ПК: фиксированные кнопки в углах */
+    @media (min-width: 601px) {
+      .btn-home {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        padding: 10px 20px;
+      }
 
+      .btn-next {
+        position: fixed;
+        top: 70px; /* на 50px ниже */
+        right: 20px;
+        padding: 10px 20px;
+      }
+    }
+
+    /* Мобильные: кнопки блочные, одна под другой */
+    @media (max-width: 600px) {
+      .btn-home,
+      .btn-next {
+        position: static;
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 18px;
+        padding: 14px 0;
+      }
+
+      #particles-js {
+        display: none;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
 
  <!-- Частицы (скрываются на мобилках) -->
