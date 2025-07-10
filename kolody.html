@@ -2,25 +2,23 @@
 <html lang="ru">
 <head>
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
+  <script type="text/javascript">
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
     m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {
-      if (document.scripts[j].src === r) return;
-    }
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
     k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
     ym(103229966, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
     });
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/103229966" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
-  <!-- Google Analytics -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJPT5PK5S1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -148,17 +146,23 @@
     }
 
     @media (max-width: 600px) {
-      body { font-size: 18px; }
-      .deck p { font-size: 17px; }
-      .deck a { font-size: 16px; }
-      h1 { font-size: 28px; }
+      body {
+        font-size: 18px;
+      }
+      .deck p {
+        font-size: 17px;
+      }
+      .deck a {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 768px) {
       #particles-js {
         display: none !important;
-        visibility: hidden !important;
-        height: 0 !important;
-        width: 0 !important;
-        pointer-events: none !important;
-        opacity: 0 !important;
       }
     }
   </style>
@@ -398,48 +402,44 @@
 
 </main>
 
-<!-- Скрипт частиц: загружается только если ширина экрана больше 768px -->
+<!-- Подключаем tsParticles только если ширина экрана больше 768px -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
 <script>
   if (window.innerWidth > 768) {
-    const script = document.createElement('script');
-    script.src = "https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js";
-    script.onload = () => {
-      tsParticles.load("particles-js", {
-        background: { color: { value: "#000000" } },
-        particles: {
-          number: { value: 180 },
-          color: { value: "#ffffff" },
-          shape: { type: "circle" },
-          opacity: { value: 0.6 },
-          size: { value: 2 },
-          move: {
-            enable: true,
-            speed: 0.6,
-            direction: "none",
-            outModes: { default: "bounce" }
-          },
-          links: {
-            enable: true,
-            distance: 130,
-            color: "#ffffff",
-            opacity: 0.4,
-            width: 1
-          }
+    tsParticles.load("particles-js", {
+      background: { color: { value: "#000000" } },
+      particles: {
+        number: { value: 180 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.6 },
+        size: { value: 2 },
+        move: {
+          enable: true,
+          speed: 0.6,
+          direction: "none",
+          outModes: { default: "bounce" }
         },
-        interactivity: {
-          events: {
-            onHover: { enable: true, mode: "connect" },
-            onClick: { enable: true, mode: "push" }
-          },
-          modes: {
-            connect: { distance: 150, radius: 200 },
-            push: { quantity: 4 }
-          }
+        links: {
+          enable: true,
+          distance: 130,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        }
+      },
+      interactivity: {
+        events: {
+          onHover: { enable: true, mode: "connect" },
+          onClick: { enable: true, mode: "push" }
         },
-        detectRetina: true
-      });
-    };
-    document.body.appendChild(script);
+        modes: {
+          connect: { distance: 150, radius: 200 },
+          push: { quantity: 4 }
+        }
+      },
+      detectRetina: true
+    });
   }
 </script>
 
