@@ -175,6 +175,20 @@
   </style>
 </head>
 <body>
+  <script>
+  if (window.innerWidth <= 768) {
+    // Полностью отключаем рендеринг частиц, скрываем контейнер
+    const particles = document.getElementById('particles-js');
+    if(particles) {
+      particles.style.display = 'none';
+    }
+    // Можно отключить загрузку tsParticles, но это уже сложнее,
+    // просто скроем и остановим визуализацию
+    if(window.tsParticles && tsParticles.domItem(0)) {
+      tsParticles.domItem(0).destroy();
+    }
+  }
+</script>
 
 <div id="particles-js"></div>
 
