@@ -2,379 +2,173 @@
 <html lang="ru">
 <head>
   <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {
+      if (document.scripts[j].src === r) return;
+    }
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(103229966, "init", {
+    ym(103229966, "init", {
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true,
         webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/103229966" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJPT5PK5S1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/103229966" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
-  gtag('config', 'G-RJPT5PK5S1');
-</script>
-  <meta charset="UTF-8" />
-  <title>Колоды МАК</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: sans-serif;
-      background: black;
-      overflow-x: hidden;
-      color: white;
-    }
-
-    #particles-js {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    main {
-      position: relative;
-      z-index: 1;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      text-align: center;
-      font-family: 'Cinzel Decorative', cursive;
-      font-size: 36px;
-      color: #f8bbd0;
-      text-shadow: 0 0 10px #ba68c8, 0 0 20px #ce93d8;
-      margin-bottom: 30px;
-    }
-
-    .btn-home {
-      display: inline-block;
-      margin-bottom: 30px;
-      padding: 10px 20px;
-      background-color: #ffffff20;
-      color: #fff;
-      border: 1px solid white;
-      border-radius: 8px;
-      font-size: 16px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-family: 'Cinzel Decorative', cursive;
-      cursor: pointer;
-    }
-
-    .btn-home:hover {
-      background-color: white;
-      color: black;
-    }
-
-    .deck {
-      background-color: rgba(255, 255, 255, 0.05);
-      border: 1px solid #ba68c8;
-      border-radius: 12px;
-      margin-bottom: 25px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(255, 187, 208, 0.3);
-    }
-
-    .deck img {
-      max-width: 100%;
-      width: 250px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-
-    .deck p {
-      color: #fce4ec;
-      font-size: 15px;
-      text-align: center;
-      line-height: 1.4;
-      margin-bottom: 15px;
-    }
-
-    .deck a {
-      padding: 10px 20px;
-      background-color: #ffffff20;
-      border: 1px solid #f8bbd0;
-      color: #fce4ec;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-size: 14px;
-    }
-
-    .deck a:hover {
-      background-color: #fce4ec;
-      color: black;
-    }
-
-    @media (min-width: 700px) {
-      .deck-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-      }
-    }
-
-    @media (min-width: 1000px) {
-      .deck-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-    @media (max-width: 600px) {
-  body {
-    font-size: 18px; /* Увеличенный базовый размер */
-  }
-
-  .deck p {
-    font-size: 17px;
-  }
-
-  .deck a {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-}
-@media (max-width: 768px) {
-  #particles-js {
-    display: none !important;
-    pointer-events: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-  }
-}
-
-  </style>
-</head>
-<body>
-  
-
-<div id="particles-js"></div>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(103229966, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/103229966" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJPT5PK5S1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RJPT5PK5S1');
-</script>
-  <meta charset="UTF-8" />
-  <title>Колоды МАК</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: sans-serif;
-      background: black;
-      overflow-x: hidden;
-      color: white;
-    }
-
-    #particles-js {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    main {
-      position: relative;
-      z-index: 1;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      text-align: center;
-      font-family: 'Cinzel Decorative', cursive;
-      font-size: 36px;
-      color: #f8bbd0;
-      text-shadow: 0 0 10px #ba68c8, 0 0 20px #ce93d8;
-      margin-bottom: 30px;
-    }
-
-    .btn-home {
-      display: inline-block;
-      margin-bottom: 30px;
-      padding: 10px 20px;
-      background-color: #ffffff20;
-      color: #fff;
-      border: 1px solid white;
-      border-radius: 8px;
-      font-size: 16px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-family: 'Cinzel Decorative', cursive;
-      cursor: pointer;
-    }
-
-    .btn-home:hover {
-      background-color: white;
-      color: black;
-    }
-
-    .deck {
-      background-color: rgba(255, 255, 255, 0.05);
-      border: 1px solid #ba68c8;
-      border-radius: 12px;
-      margin-bottom: 25px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(255, 187, 208, 0.3);
-    }
-
-    .deck img {
-      max-width: 100%;
-      width: 250px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-
-    .deck p {
-      color: #fce4ec;
-      font-size: 15px;
-      text-align: center;
-      line-height: 1.4;
-      margin-bottom: 15px;
-    }
-
-    .deck a {
-      padding: 10px 20px;
-      background-color: #ffffff20;
-      border: 1px solid #f8bbd0;
-      color: #fce4ec;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-size: 14px;
-    }
-
-    .deck a:hover {
-      background-color: #fce4ec;
-      color: black;
-    }
-
-    @media (min-width: 700px) {
-      .deck-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-      }
-    }
-
-    @media (min-width: 1000px) {
-      .deck-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-    @media (max-width: 600px) {
-  body {
-    font-size: 18px; /* Увеличенный базовый размер */
-  }
-
-  .deck p {
-    font-size: 17px;
-  }
-
-  .deck a {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-}
-@media (max-width: 768px) {
-  #particles-js {
-    display: none !important;
-    pointer-events: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-  }
-}
-
-  </style>
-</head>
-<body>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJPT5PK5S1"></script>
   <script>
-  if (window.innerWidth <= 768) {
-    // Полностью отключаем рендеринг частиц, скрываем контейнер
-    const particles = document.getElementById('particles-js');
-    if(particles) {
-      particles.style.display = 'none';
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RJPT5PK5S1');
+  </script>
+
+  <meta charset="UTF-8" />
+  <title>Колоды МАК</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+      background: black;
+      overflow-x: hidden;
+      color: white;
     }
-    // Можно отключить загрузку tsParticles, но это уже сложнее,
-    // просто скроем и остановим визуализацию
-    if(window.tsParticles && tsParticles.domItem(0)) {
-      tsParticles.domItem(0).destroy();
+
+    #particles-js {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
     }
-  }
-</script>
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 36px;
+      color: #f8bbd0;
+      text-shadow: 0 0 10px #ba68c8, 0 0 20px #ce93d8;
+      margin-bottom: 30px;
+    }
+
+    .btn-home {
+      display: inline-block;
+      margin-bottom: 30px;
+      padding: 10px 20px;
+      background-color: #ffffff20;
+      color: #fff;
+      border: 1px solid white;
+      border-radius: 8px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-family: 'Cinzel Decorative', cursive;
+      cursor: pointer;
+    }
+
+    .btn-home:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .deck {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid #ba68c8;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(255, 187, 208, 0.3);
+    }
+
+    .deck img {
+      max-width: 100%;
+      width: 250px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .deck p {
+      color: #fce4ec;
+      font-size: 15px;
+      text-align: center;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+
+    .deck a {
+      padding: 10px 20px;
+      background-color: #ffffff20;
+      border: 1px solid #f8bbd0;
+      color: #fce4ec;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 14px;
+    }
+
+    .deck a:hover {
+      background-color: #fce4ec;
+      color: black;
+    }
+
+    @media (min-width: 700px) {
+      .deck-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      .deck-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      body { font-size: 18px; }
+      .deck p { font-size: 17px; }
+      .deck a { font-size: 16px; }
+      h1 { font-size: 28px; }
+      #particles-js {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        width: 0 !important;
+        pointer-events: none !important;
+        opacity: 0 !important;
+      }
+    }
+  </style>
+</head>
+<body>
 
 <div id="particles-js"></div>
 
 <main>
   <a href="index.html" class="btn-home">← На главную</a>
-
   <h1>🌸 Колоды МАК-карт 🌸</h1>
 
   <!-- Пример колоды -->
@@ -602,45 +396,50 @@
 
 </main>
 
-<!-- Звёзды -->
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+<!-- Скрипт частиц: загружается только если ширина экрана больше 768px -->
 <script>
-  tsParticles.load("particles-js", {
-    background: { color: { value: "#000000" } },
-    particles: {
-      number: { value: 180 },
-      color: { value: "#ffffff" },
-      shape: { type: "circle" },
-      opacity: { value: 0.6 },
-      size: { value: 2 },
-      move: {
-        enable: true,
-        speed: 0.6,
-        direction: "none",
-        outModes: { default: "bounce" }
-      },
-      links: {
-        enable: true,
-        distance: 130,
-        color: "#ffffff",
-        opacity: 0.4,
-        width: 1
-      }
-    },
-    interactivity: {
-      events: {
-        onHover: { enable: true, mode: "connect" },
-        onClick: { enable: true, mode: "push" }
-      },
-      modes: {
-        connect: { distance: 150, radius: 200 },
-        push: { quantity: 4 }
-      }
-    },
-    detectRetina: true
-  });
+  if (window.innerWidth > 768) {
+    const script = document.createElement('script');
+    script.src = "https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js";
+    script.onload = () => {
+      tsParticles.load("particles-js", {
+        background: { color: { value: "#000000" } },
+        particles: {
+          number: { value: 180 },
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.6 },
+          size: { value: 2 },
+          move: {
+            enable: true,
+            speed: 0.6,
+            direction: "none",
+            outModes: { default: "bounce" }
+          },
+          links: {
+            enable: true,
+            distance: 130,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1
+          }
+        },
+        interactivity: {
+          events: {
+            onHover: { enable: true, mode: "connect" },
+            onClick: { enable: true, mode: "push" }
+          },
+          modes: {
+            connect: { distance: 150, radius: 200 },
+            push: { quantity: 4 }
+          }
+        },
+        detectRetina: true
+      });
+    };
+    document.body.appendChild(script);
+  }
 </script>
 
 </body>
 </html>
-
