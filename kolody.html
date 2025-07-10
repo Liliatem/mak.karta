@@ -125,6 +125,26 @@
         grid-template-columns: repeat(3, 1fr);
       }
     }
+    .desktop-only {
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  .desktop-only {
+    display: none;
+  }
+}
+    .mobile-br {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-br {
+    display: inline;
+  }
+}
+
+
   </style>
 </head>
 <body>
@@ -133,7 +153,10 @@
 
 <main>
   <a href="index.html" class="btn-home">← На главную</a>
-  <h1>🌸 Колоды МАК-карт 🌸</h1>
+  <h1>
+  <span class="desktop-only">🌸 </span>Колоды <span class="mobile-br"><br></span>МАК-карт<span class="desktop-only"> 🌸</span>
+</h1>
+
 
   <!-- Пример колоды -->
 <div class="deck-grid">
