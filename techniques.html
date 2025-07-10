@@ -234,7 +234,37 @@
   }
 }
 
-    
+ .accordion-header {
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a;
+  font-weight: 700;
+  font-size: 20px;
+  color: #f8bbd0;
+  border-bottom: 1px solid #ba68c8;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  border-radius: 10px 10px 0 0;
+  padding: 18px 22px;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  background-color: rgba(186, 104, 200, 0.3);
+}
+
+.accordion-header .number {
+  flex: 0 0 40px;
+  text-align: left;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.accordion-header .title-text {
+  flex: 1;
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;
+}
+   
 
   </style>
 </head>
@@ -261,126 +291,160 @@
 <div class="accordion">
 
   <div class="accordion-item">
-    <div class="accordion-header">1. Мишень</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту. Техника помогает осознать путь к цели и возможные преграды.</p>
-      <ul>
-        <li>Что является моей главной целью сейчас?</li>
-        <li>Что поможет мне к ней приблизиться?</li>
-        <li>Какие препятствия я вижу?</li>
-      </ul>
-    </div>
+  <div class="accordion-header">
+    <div class="number">1.</div>
+    <div class="title-text">Мишень</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту. Техника помогает осознать путь к цели и возможные преграды.</p>
+    <ul>
+      <li>Что является моей главной целью сейчас?</li>
+      <li>Что поможет мне к ней приблизиться?</li>
+      <li>Какие препятствия я вижу?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">2.</div>
+    <div class="title-text">Диалог с образом</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, вызывающую сильное чувство. Представьте, что её персонаж может говорить.</p>
+    <ul>
+      <li>Что он хочет мне сказать?</li>
+      <li>Какие эмоции он у меня вызывает?</li>
+      <li>О чём этот образ мне напоминает?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">3.</div>
+    <div class="title-text">Я и мой запрос</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 2 карты: одна символизирует вас, другая — ваш запрос.</p>
+    <ul>
+      <li>Как я сейчас воспринимаю себя?</li>
+      <li>Как я отношусь к своему запросу?</li>
+      <li>Что общего между этими образами?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">4.</div>
+    <div class="title-text">Путеводная звезда</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая кажется вам самой притягательной или загадочной.</p>
+    <ul>
+      <li>Какой внутренний смысл или идея скрывается за этой картой?</li>
+      <li>Какие чувства и мысли она у вас вызывает?</li>
+      <li>Как эта карта может направить вас в текущих целях или ситуациях?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">5.</div>
+    <div class="title-text">Мост</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая поможет найти путь от текущего состояния к желаемому.</p>
+    <ul>
+      <li>Где я нахожусь сейчас?</li>
+      <li>Куда хочу попасть?</li>
+      <li>Что может быть «мостом» между этими точками?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">6.</div>
+    <div class="title-text">Мой внутренний критик</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы осознать внутренние ограничивающие убеждения.</p>
+    <ul>
+      <li>Как выглядит мой внутренний критик?</li>
+      <li>Что он говорит мне чаще всего?</li>
+      <li>Что бы я сказал(а) ему в ответ?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">7.</div>
+    <div class="title-text">Ресурсное воспоминание</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы вернуться к моментам силы и поддержки.</p>
+    <ul>
+      <li>Какой момент из прошлого дал мне чувство силы?</li>
+      <li>Какие качества помогли мне справиться?</li>
+      <li>Как я могу использовать этот ресурс сейчас?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">8.</div>
+    <div class="title-text">Свет и Тень</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту для исследования светлой и теневой сторон личности.</p>
+    <ul>
+      <li>Какие качества я в себе ценю?</li>
+      <li>Какие качества мне сложно принимать?</li>
+      <li>Как я могу интегрировать обе стороны?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">9.</div>
+    <div class="title-text">Письмо себе</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которую используйте как образ письма от себя к себе.</p>
+    <ul>
+      <li>Что бы этот персонаж хотел мне передать?</li>
+      <li>Какие слова мне сейчас важны?</li>
+      <li>Как я могу откликнуться на это письмо?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">10.</div>
+    <div class="title-text">Волшебный помощник</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая станет вашим внутренним помощником.</p>
+    <ul>
+      <li>Как он выглядит? Какой он?</li>
+      <li>Что он умеет?</li>
+      <li>Чем он может помочь?</li>
+    </ul>
+  </div>
+</div>
 
   <div class="accordion-item">
-    <div class="accordion-header">2. Диалог с образом</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, вызывающую сильное чувство. Представьте, что её персонаж может говорить.</p>
-      <ul>
-        <li>Что он хочет мне сказать?</li>
-        <li>Какие эмоции он у меня вызывает?</li>
-        <li>О чём этот образ мне напоминает?</li>
-      </ul>
-    </div>
+  <div class="accordion-header">
+    <div class="number">11.</div>
+    <div class="title-text">Внутренний диалог</div>
   </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">3. Я и мой запрос</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 2 карты: одна символизирует вас, другая — ваш запрос.</p>
-      <ul>
-        <li>Как я сейчас воспринимаю себя?</li>
-        <li>Как я отношусь к своему запросу?</li>
-        <li>Что общего между этими образами?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">4. Путеводная звезда</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая кажется вам самой притягательной или загадочной.</p>
-      <ul>
-        <li>Какой внутренний смысл или идея скрывается за этой картой?</li>
-        <li>Какие чувства и мысли она у вас вызывает?</li>
-        <li>Как эта карта может направить вас в текущих целях или ситуациях?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">5. Мост</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая поможет найти путь от текущего состояния к желаемому.</p>
-      <ul>
-        <li>Где я нахожусь сейчас?</li>
-        <li>Куда хочу попасть?</li>
-        <li>Что может быть «мостом» между этими точками?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">6. Мой внутренний критик</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы осознать внутренние ограничивающие убеждения.</p>
-      <ul>
-        <li>Как выглядит мой внутренний критик?</li>
-        <li>Что он говорит мне чаще всего?</li>
-        <li>Что бы я сказал(а) ему в ответ?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">7. Ресурсное воспоминание</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы вернуться к моментам силы и поддержки.</p>
-      <ul>
-        <li>Какой момент из прошлого дал мне чувство силы?</li>
-        <li>Какие качества помогли мне справиться?</li>
-        <li>Как я могу использовать этот ресурс сейчас?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">8. Свет и Тень</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту для исследования светлой и теневой сторон личности.</p>
-      <ul>
-        <li>Какие качества я в себе ценю?</li>
-        <li>Какие качества мне сложно принимать?</li>
-        <li>Как я могу интегрировать обе стороны?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">9. Письмо себе</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которую используйте как образ письма от себя к себе.</p>
-      <ul>
-        <li>Что бы этот персонаж хотел мне передать?</li>
-        <li>Какие слова мне сейчас важны?</li>
-        <li>Как я могу откликнуться на это письмо?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">10. Волшебный помощник</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая станет вашим внутренним помощником.</p>
-      <ul>
-        <li>Как он выглядит? Какой он?</li>
-        <li>Что он умеет?</li>
-        <li>Чем он может помочь?</li>
-      </ul>
-    </div>
-  </div>
-  <div class="accordion-item">
-  <div class="accordion-header">11. Внутренний диалог</div>
   <div class="accordion-content">
     <p>Вытяните 2 карты — одна символизирует ваше сознание, другая — подсознание.</p>
     <ul>
@@ -392,7 +456,10 @@
 </div>
 
 <div class="accordion-item">
-  <div class="accordion-header">12. Образ ресурса</div>
+  <div class="accordion-header">
+    <div class="number">12.</div>
+    <div class="title-text">Образ ресурса</div>
+  </div>
   <div class="accordion-content">
     <p>Выберите карту, которая для вас символизирует ресурс и поддержку.</p>
     <ul>
@@ -404,7 +471,10 @@
 </div>
 
 <div class="accordion-item">
-  <div class="accordion-header">13. Перекресток выбора</div>
+  <div class="accordion-header">
+    <div class="number">13.</div>
+    <div class="title-text">Перекрёсток выбора</div>
+  </div>
   <div class="accordion-content">
     <p>Вытяните карту, символизирующую ситуацию выбора.</p>
     <ul>
@@ -416,7 +486,10 @@
 </div>
 
 <div class="accordion-item">
-  <div class="accordion-header">14. Путь к себе</div>
+  <div class="accordion-header">
+    <div class="number">14.</div>
+    <div class="title-text">Путь к себе</div>
+  </div>
   <div class="accordion-content">
     <p>Вытяните карту, которая показывает ваше истинное «Я».</p>
     <ul>
@@ -428,7 +501,10 @@
 </div>
 
 <div class="accordion-item">
-  <div class="accordion-header">15. Время перемен</div>
+  <div class="accordion-header">
+    <div class="number">15.</div>
+    <div class="title-text">Время перемен</div>
+  </div>
   <div class="accordion-content">
     <p>Выберите карту, символизирующую текущий этап изменений.</p>
     <ul>
@@ -440,7 +516,10 @@
 </div>
 
 <div class="accordion-item">
-  <div class="accordion-header">16. Подарок судьбы</div>
+  <div class="accordion-header">
+    <div class="number">16.</div>
+    <div class="title-text">Подарок судьбы</div>
+  </div>
   <div class="accordion-content">
     <p>Вытяните карту, которая может быть подарком или советом от Вселенной.</p>
     <ul>
@@ -452,7 +531,10 @@
 </div>
 
 <div class="accordion-item">
-  <div class="accordion-header">17. Образ внутренней силы</div>
+  <div class="accordion-header">
+    <div class="number">17.</div>
+    <div class="title-text">Образ внутренней силы</div>
+  </div>
   <div class="accordion-content">
     <p>Выберите карту, которая символизирует вашу силу.</p>
     <ul>
@@ -464,7 +546,10 @@
 </div>
 
 <div class="accordion-item">
-  <div class="accordion-header">18. Мой ключ к успеху</div>
+  <div class="accordion-header">
+    <div class="number">18.</div>
+    <div class="title-text">Мой ключ к успеху</div>
+  </div>
   <div class="accordion-content">
     <p>Вытяните карту, которая укажет, что помогает вам достигать целей.</p>
     <ul>
@@ -476,7 +561,10 @@
 </div>
 
 <div class="accordion-item">
-  <div class="accordion-header">19. Скрытые возможности</div>
+  <div class="accordion-header">
+    <div class="number">19.</div>
+    <div class="title-text">Скрытые возможности</div>
+  </div>
   <div class="accordion-content">
     <p>Выберите карту, которая раскрывает скрытые возможности вокруг вас.</p>
     <ul>
@@ -488,7 +576,10 @@
 </div>
 
 <div class="accordion-item">
-  <div class="accordion-header">20. Благодарность</div>
+  <div class="accordion-header">
+    <div class="number">20.</div>
+    <div class="title-text">Благодарность</div>
+  </div>
   <div class="accordion-content">
     <p>Вытяните карту, которая символизирует то, за что вы благодарны.</p>
     <ul>
@@ -508,487 +599,579 @@
 <div class="accordion">
 
   <div class="accordion-item">
-    <div class="accordion-header">1. «Зеркало доверия»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, отражающую состояние ваших отношений. Посмотрите на образ и ответьте на вопросы:</p>
-      <ul>
-        <li>Какие чувства отражает эта карта по отношению к партнеру или другу?</li>
-        <li>Что вы видите, глядя на эту «зеркальную» сторону?</li>
-        <li>Как можно укрепить доверие в отношениях?</li>
-      </ul>
-    </div>
+  <div class="accordion-header">
+    <div class="number">1.</div>
+    <div class="title-text">Зеркало доверия</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, отражающую состояние ваших отношений. Посмотрите на образ и ответьте на вопросы:</p>
+    <ul>
+      <li>Какие чувства отражает эта карта по отношению к партнеру или другу?</li>
+      <li>Что вы видите, глядя на эту «зеркальную» сторону?</li>
+      <li>Как можно укрепить доверие в отношениях?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">2.</div>
+    <div class="title-text">Общий путь</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 2 карты: одну за себя, другую за партнера или друга. Рассмотрите их вместе и ответьте на вопросы:</p>
+    <ul>
+      <li>Что объединяет карты, символизирующие вас и партнера/друга?</li>
+      <li>Какие различия могут стать ресурсом для развития?</li>
+      <li>Какие общие цели вы видите для дальнейшего пути?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">3.</div>
+    <div class="title-text">Секреты в открытую</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая отражает скрытые чувства или мысли. Проанализируйте и ответьте на вопросы:</p>
+    <ul>
+      <li>Какие скрытые чувства или мысли показывает выбранная карта?</li>
+      <li>Как эти тайны влияют на ваши отношения?</li>
+      <li>Какие шаги помогут открыть и обсудить важные темы?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">4.</div>
+    <div class="title-text">Взаимные ресурсы</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 2 карты: одну за вас, другую за партнера/друга. Ответьте на вопросы:</p>
+    <ul>
+      <li>Какие ресурсы вы приносите в отношения?</li>
+      <li>Какие ресурсы получает партнер или друг?</li>
+      <li>Как можно совместно использовать эти ресурсы для роста?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">5.</div>
+    <div class="title-text">Область поддержки</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, символизирующую, где вам нужна поддержка в отношениях. Ответьте на вопросы:</p>
+    <ul>
+      <li>В какой сфере чувствуется нехватка поддержки?</li>
+      <li>Как партнер/друг может помочь вам?</li>
+      <li>Что вы сами можете сделать, чтобы укрепить поддержку?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">6.</div>
+    <div class="title-text">Общий вызов</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая отражает главный вызов в ваших отношениях. Ответьте на вопросы:</p>
+    <ul>
+      <li>Какой вызов стоит перед вами?</li>
+      <li>Как этот вызов влияет на взаимодействие?</li>
+      <li>Какие шаги помогут справиться с ним?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">7.</div>
+    <div class="title-text">Открытое сердце</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая символизирует ваши чувства сейчас. Ответьте на вопросы:</p>
+    <ul>
+      <li>Что вы чувствуете к партнеру или другу в этот момент?</li>
+      <li>Какие эмоции хотелось бы выразить?</li>
+      <li>Как открыть сердце для более глубокого взаимопонимания?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">8.</div>
+    <div class="title-text">Язык жестов</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 2 карты: одну о том, как вы выражаете себя, другую — как вас воспринимают. Ответьте на вопросы:</p>
+    <ul>
+      <li>Каковы различия между вашим выражением и восприятием?</li>
+      <li>Что стоит изменить или уточнить в коммуникации?</li>
+      <li>Какие невербальные сигналы важны для отношений?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">9.</div>
+    <div class="title-text">Совместное время</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая отражает качество совместного времени. Ответьте на вопросы:</p>
+    <ul>
+      <li>Как вы проводите время вместе?</li>
+      <li>Что приносит радость и сближает?</li>
+      <li>Что можно улучшить или добавить?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">10.</div>
+    <div class="title-text">Подарок отношений</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, символизирующую дар, который вы получаете из отношений. Ответьте на вопросы:</p>
+    <ul>
+      <li>Какой дар или урок даёт вам эта связь?</li>
+      <li>Что вы цените больше всего?</li>
+      <li>Как вы можете поблагодарить партнера или друга?</li>
+    </ul>
+  </div>
+</div>
 
   <div class="accordion-item">
-    <div class="accordion-header">2. «Общий путь»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 2 карты: одну за себя, другую за партнера или друга. Рассмотрите их вместе и ответьте на вопросы:</p>
-      <ul>
-        <li>Что объединяет карты, символизирующие вас и партнера/друга?</li>
-        <li>Какие различия могут стать ресурсом для развития?</li>
-        <li>Какие общие цели вы видите для дальнейшего пути?</li>
-      </ul>
-    </div>
+  <div class="accordion-header">
+    <div class="number">11.</div>
+    <div class="title-text">Взаимное принятие</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 2 карты: свою и партнера/друга. Ответьте на вопросы:</p>
+    <ul>
+      <li>Какие черты вы принимаете друг в друге?</li>
+      <li>Какие сложности принимаете без осуждения?</li>
+      <li>Как улучшить взаимное принятие?</li>
+    </ul>
+  </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">3. «Секреты в открытую»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая отражает скрытые чувства или мысли. Проанализируйте и ответьте на вопросы:</p>
-      <ul>
-        <li>Какие скрытые чувства или мысли показывает выбранная карта?</li>
-        <li>Как эти тайны влияют на ваши отношения?</li>
-        <li>Какие шаги помогут открыть и обсудить важные темы?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">12.</div>
+    <div class="title-text">Точка баланса</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая отражает баланс в отношениях. Ответьте на вопросы:</p>
+    <ul>
+      <li>Где ощущается равновесие?</li>
+      <li>Где требуется больше внимания или коррекции?</li>
+      <li>Как восстановить гармонию?</li>
+    </ul>
+  </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">4. «Взаимные ресурсы»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 2 карты: одну за вас, другую за партнера/друга. Ответьте на вопросы:</p>
-      <ul>
-        <li>Какие ресурсы вы приносите в отношения?</li>
-        <li>Какие ресурсы получает партнер или друг?</li>
-        <li>Как можно совместно использовать эти ресурсы для роста?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">13.</div>
+    <div class="title-text">Энергия поддержки</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая показывает энергию поддержки между вами. Ответьте на вопросы:</p>
+    <ul>
+      <li>Какую поддержку вы даёте?</li>
+      <li>Какую поддержку получаете?</li>
+      <li>Что можно усилить?</li>
+    </ul>
+  </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">5. «Область поддержки»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, символизирующую, где вам нужна поддержка в отношениях. Ответьте на вопросы:</p>
-      <ul>
-        <li>В какой сфере чувствуется нехватка поддержки?</li>
-        <li>Как партнер/друг может помочь вам?</li>
-        <li>Что вы сами можете сделать, чтобы укрепить поддержку?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">14.</div>
+    <div class="title-text">Слова, которые лечат</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая символизирует слова или послания для партнера/друга. Ответьте на вопросы:</p>
+    <ul>
+      <li>Какие слова сейчас важны?</li>
+      <li>Что хотелось бы услышать?</li>
+      <li>Как выразить свои чувства через слова?</li>
+    </ul>
+  </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">6. «Общий вызов»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая отражает главный вызов в ваших отношениях. Ответьте на вопросы:</p>
-      <ul>
-        <li>Какой вызов стоит перед вами?</li>
-        <li>Как этот вызов влияет на взаимодействие?</li>
-        <li>Какие шаги помогут справиться с ним?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">15.</div>
+    <div class="title-text">Общее вдохновение</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 2 карты — свои и партнера/друга. Ответьте на вопросы:</p>
+    <ul>
+      <li>Что вас вдохновляет вместе?</li>
+      <li>Какие цели и мечты вас объединяют?</li>
+      <li>Как поддерживать общий дух?</li>
+    </ul>
+  </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">7. «Открытое сердце»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая символизирует ваши чувства сейчас. Ответьте на вопросы:</p>
-      <ul>
-        <li>Что вы чувствуете к партнеру или другу в этот момент?</li>
-        <li>Какие эмоции хотелось бы выразить?</li>
-        <li>Как открыть сердце для более глубокого взаимопонимания?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">16.</div>
+    <div class="title-text">Пространство свободы</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, отражающую уровень свободы в отношениях. Ответьте на вопросы:</p>
+    <ul>
+      <li>Как проявляется свобода каждого из вас?</li>
+      <li>Где ощущается ограничение?</li>
+      <li>Как найти баланс между свободой и близостью?</li>
+    </ul>
+  </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">8. «Язык жестов»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 2 карты: одну о том, как вы выражаете себя, другую — как вас воспринимают. Ответьте на вопросы:</p>
-      <ul>
-        <li>Каковы различия между вашим выражением и восприятием?</li>
-        <li>Что стоит изменить или уточнить в коммуникации?</li>
-        <li>Какие невербальные сигналы важны для отношений?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">17.</div>
+    <div class="title-text">Сила благодарности</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, символизирующую благодарность в отношениях. Ответьте на вопросы:</p>
+    <ul>
+      <li>За что вы благодарны партнеру/другу?</li>
+      <li>Как часто вы выражаете благодарность?</li>
+      <li>Какие слова или действия усилят благодарность?</li>
+    </ul>
+  </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">9. «Совместное время»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая отражает качество совместного времени. Ответьте на вопросы:</p>
-      <ul>
-        <li>Как вы проводите время вместе?</li>
-        <li>Что приносит радость и сближает?</li>
-        <li>Что можно улучшить или добавить?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">18.</div>
+    <div class="title-text">Путь примирения</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая поможет понять путь к примирению после конфликта. Ответьте на вопросы:</p>
+    <ul>
+      <li>Что мешает примирению?</li>
+      <li>Какие шаги помогут восстановить связь?</li>
+      <li>Как предотвратить повторение конфликта?</li>
+    </ul>
+  </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">10. «Подарок отношений»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, символизирующую дар, который вы получаете из отношений. Ответьте на вопросы:</p>
-      <ul>
-        <li>Какой дар или урок даёт вам эта связь?</li>
-        <li>Что вы цените больше всего?</li>
-        <li>Как вы можете поблагодарить партнера или друга?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">19.</div>
+    <div class="title-text">Слушать и слышать</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 2 карты: одну — о вашем слушании, другую — о вашем восприятии. Ответьте на вопросы:</p>
+    <ul>
+      <li>Как вы слушаете партнера/друга?</li>
+      <li>Что вы действительно слышите?</li>
+      <li>Как улучшить качество общения?</li>
+    </ul>
+  </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">11. «Взаимное принятие»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 2 карты: свою и партнера/друга. Ответьте на вопросы:</p>
-      <ul>
-        <li>Какие черты вы принимаете друг в друге?</li>
-        <li>Какие сложности принимаете без осуждения?</li>
-        <li>Как улучшить взаимное принятие?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">20.</div>
+    <div class="title-text">Обновление отношений</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая символизирует обновление в отношениях. Ответьте на вопросы:</p>
+    <ul>
+      <li>Что можно обновить или изменить?</li>
+      <li>Какие новые практики или ритуалы помогут развитию?</li>
+      <li>Как вдохновить друг друга на перемены?</li>
+    </ul>
+  </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">12. «Точка баланса»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая отражает баланс в отношениях. Ответьте на вопросы:</p>
-      <ul>
-        <li>Где ощущается равновесие?</li>
-        <li>Где требуется больше внимания или коррекции?</li>
-        <li>Как восстановить гармонию?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">13. «Энергия поддержки»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая показывает энергию поддержки между вами. Ответьте на вопросы:</p>
-      <ul>
-        <li>Какую поддержку вы даёте?</li>
-        <li>Какую поддержку получаете?</li>
-        <li>Что можно усилить?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">14. «Слова, которые лечат»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая символизирует слова или послания для партнера/друга. Ответьте на вопросы:</p>
-      <ul>
-        <li>Какие слова сейчас важны?</li>
-        <li>Что хотелось бы услышать?</li>
-        <li>Как выразить свои чувства через слова?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">15. «Общее вдохновение»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 2 карты — свои и партнера/друга. Ответьте на вопросы:</p>
-      <ul>
-        <li>Что вас вдохновляет вместе?</li>
-        <li>Какие цели и мечты вас объединяют?</li>
-        <li>Как поддерживать общий дух?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">16. «Пространство свободы»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, отражающую уровень свободы в отношениях. Ответьте на вопросы:</p>
-      <ul>
-        <li>Как проявляется свобода каждого из вас?</li>
-        <li>Где ощущается ограничение?</li>
-        <li>Как найти баланс между свободой и близостью?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">17. «Сила благодарности»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, символизирующую благодарность в отношениях. Ответьте на вопросы:</p>
-      <ul>
-        <li>За что вы благодарны партнеру/другу?</li>
-        <li>Как часто вы выражаете благодарность?</li>
-        <li>Какие слова или действия усилят благодарность?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">18. «Путь примирения»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая поможет понять путь к примирению после конфликта. Ответьте на вопросы:</p>
-      <ul>
-        <li>Что мешает примирению?</li>
-        <li>Какие шаги помогут восстановить связь?</li>
-        <li>Как предотвратить повторение конфликта?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">19. «Слушать и слышать»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 2 карты: одну — о вашем слушании, другую — о вашем восприятии. Ответьте на вопросы:</p>
-      <ul>
-        <li>Как вы слушаете партнера/друга?</li>
-        <li>Что вы действительно слышите?</li>
-        <li>Как улучшить качество общения?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">20. «Обновление отношений»</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая символизирует обновление в отношениях. Ответьте на вопросы:</p>
-      <ul>
-        <li>Что можно обновить или изменить?</li>
-        <li>Какие новые практики или ритуалы помогут развитию?</li>
-        <li>Как вдохновить друг друга на перемены?</li>
-      </ul>
-    </div>
-  </div>
 <div class="section-title">Раздел III. Работа с финансами и денежными потоками</div>
 
 <div class="accordion">
 
-  <div class="accordion-item">
-    <div class="accordion-header">1. Денежный поток</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы понять своё отношение к деньгам и текущие финансовые потоки.</p>
-      <ul>
-        <li>Какие чувства вызывает у меня тема денег?</li>
-        <li>Что сейчас притягивает или блокирует денежные потоки?</li>
-        <li>Как я могу улучшить своё финансовое состояние?</li>
-      </ul>
-    </div>
+ <div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">1.</div>
+    <div class="title-text">Денежный поток</div>
   </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы понять своё отношение к деньгам и текущие финансовые потоки.</p>
+    <ul>
+      <li>Какие чувства вызывает у меня тема денег?</li>
+      <li>Что сейчас притягивает или блокирует денежные потоки?</li>
+      <li>Как я могу улучшить своё финансовое состояние?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">2.</div>
+    <div class="title-text">Мой денежный образ</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая символизирует ваш денежный образ или отношение к богатству.</p>
+    <ul>
+      <li>Какие качества я связываю с деньгами?</li>
+      <li>Что мне помогает или мешает притягивать деньги?</li>
+      <li>Как я могу трансформировать своё отношение к деньгам?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">3.</div>
+    <div class="title-text">Финансовые страхи</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы осознать страхи, связанные с финансами.</p>
+    <ul>
+      <li>Что именно меня пугает в финансовой сфере?</li>
+      <li>Откуда берутся эти страхи?</li>
+      <li>Что поможет мне отпустить эти страхи?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">4.</div>
+    <div class="title-text">Инвестиции в себя</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая покажет, как вы можете инвестировать в своё развитие.</p>
+    <ul>
+      <li>Какие навыки или знания мне стоит развивать?</li>
+      <li>Как это повлияет на мой доход?</li>
+      <li>Что мешает мне вкладываться в себя прямо сейчас?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">5.</div>
+    <div class="title-text">Баланс доходов и расходов</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 2 карты: первая — доходы, вторая — расходы.</p>
+    <ul>
+      <li>Что я могу улучшить в моих доходах?</li>
+      <li>Какие расходы требуют внимания?</li>
+      <li>Как добиться финансового баланса?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">6.</div>
+    <div class="title-text">Источники дохода</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы осознать основные источники ваших доходов.</p>
+    <ul>
+      <li>Откуда поступают мои деньги?</li>
+      <li>Какие новые источники можно развивать?</li>
+      <li>Что нужно для их расширения?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">7.</div>
+    <div class="title-text">Отношение к богатству</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы изучить свое отношение к богатству и изобилию.</p>
+    <ul>
+      <li>Что для меня значит богатство?</li>
+      <li>Какие убеждения мешают мне стать богатым(ой)?</li>
+      <li>Что изменить, чтобы принимать изобилие?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">8.</div>
+    <div class="title-text">Финансовые цели</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы обозначить финансовые цели.</p>
+    <ul>
+      <li>Какая моя основная финансовая цель сейчас?</li>
+      <li>Что поможет мне её достичь?</li>
+      <li>Какие шаги нужно сделать для её реализации?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">9.</div>
+    <div class="title-text">Избавление от долгов</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы понять, как справиться с долгами и финансовыми обязательствами.</p>
+    <ul>
+      <li>Что мешает мне избавиться от долгов?</li>
+      <li>Какие ресурсы у меня есть для этого?</li>
+      <li>Какой первый шаг я могу сделать прямо сейчас?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div class="number">10.</div>
+    <div class="title-text">Финансовый план</div>
+  </div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 3 карты, которые помогут составить план действий для улучшения финансов.</p>
+    <ul>
+      <li>Что нужно сделать в первую очередь?</li>
+      <li>Какие препятствия могут встретиться?</li>
+      <li>Как поддерживать мотивацию на пути к цели?</li>
+    </ul>
+  </div>
+</div>
+
 
   <div class="accordion-item">
-    <div class="accordion-header">2. Мой денежный образ</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая символизирует ваш денежный образ или отношение к богатству.</p>
-      <ul>
-        <li>Какие качества я связываю с деньгами?</li>
-        <li>Что мне помогает или мешает притягивать деньги?</li>
-        <li>Как я могу трансформировать своё отношение к деньгам?</li>
-      </ul>
-    </div>
+  <div class="accordion-header">11. Притяжение денег</div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту для понимания, как привлечь деньги и изобилие в свою жизнь.</p>
+    <ul>
+      <li>Какие действия помогут мне привлечь деньги?</li>
+      <li>Что сейчас мешает этому процессу?</li>
+      <li>Как изменить энергетику денег вокруг себя?</li>
+    </ul>
   </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">3. Финансовые страхи</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы осознать страхи, связанные с финансами.</p>
-      <ul>
-        <li>Что именно меня пугает в финансовой сфере?</li>
-        <li>Откуда берутся эти страхи?</li>
-        <li>Что поможет мне отпустить эти страхи?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">12. Энергия расходов</div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы проанализировать энергию и мотивацию своих трат.</p>
+    <ul>
+      <li>На что я трачу деньги чаще всего?</li>
+      <li>Какие траты приносят мне радость или пользу?</li>
+      <li>Какие расходы можно уменьшить или переосмыслить?</li>
+    </ul>
   </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">4. Инвестиции в себя</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая покажет, как вы можете инвестировать в своё развитие.</p>
-      <ul>
-        <li>Какие навыки или знания мне стоит развивать?</li>
-        <li>Как это повлияет на мой доход?</li>
-        <li>Что мешает мне вкладываться в себя прямо сейчас?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">13. Благодарность за изобилие</div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы сосредоточиться на том, что уже есть и чему вы благодарны.</p>
+    <ul>
+      <li>За что я благодарен(на) в финансовой сфере?</li>
+      <li>Как благодарность помогает притягивать больше?</li>
+      <li>Как я могу выражать благодарность каждый день?</li>
+    </ul>
   </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">5. Баланс доходов и расходов</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 2 карты: первая — доходы, вторая — расходы.</p>
-      <ul>
-        <li>Что я могу улучшить в моих доходах?</li>
-        <li>Какие расходы требуют внимания?</li>
-        <li>Как добиться финансового баланса?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">14. Финансовые привычки</div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы оценить свои финансовые привычки.</p>
+    <ul>
+      <li>Какие привычки поддерживают мой финансовый успех?</li>
+      <li>Какие привычки мешают мне?</li>
+      <li>Что я могу изменить в своём поведении?</li>
+    </ul>
   </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">6. Источники дохода</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы осознать основные источники ваших доходов.</p>
-      <ul>
-        <li>Откуда поступают мои деньги?</li>
-        <li>Какие новые источники можно развивать?</li>
-        <li>Что нужно для их расширения?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">15. Финансовая защита</div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы понять, как лучше защитить свои финансы и накопления.</p>
+    <ul>
+      <li>Какие риски нужно учитывать?</li>
+      <li>Какие меры помогут укрепить финансовую безопасность?</li>
+      <li>Что я могу сделать уже сегодня для защиты своих денег?</li>
+    </ul>
   </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">7. Отношение к богатству</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы изучить свое отношение к богатству и изобилию.</p>
-      <ul>
-        <li>Что для меня значит богатство?</li>
-        <li>Какие убеждения мешают мне стать богатым(ой)?</li>
-        <li>Что изменить, чтобы принимать изобилие?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">16. Финансовые цели на год</div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы обозначить главную финансовую цель на год.</p>
+    <ul>
+      <li>Какая цель сейчас самая важная?</li>
+      <li>Что нужно сделать для её достижения?</li>
+      <li>Какие ресурсы можно использовать?</li>
+    </ul>
   </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">8. Финансовые цели</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы обозначить финансовые цели.</p>
-      <ul>
-        <li>Какая моя основная финансовая цель сейчас?</li>
-        <li>Что поможет мне её достичь?</li>
-        <li>Какие шаги нужно сделать для её реализации?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">17. Финансовое вдохновение</div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, которая вдохновит вас на финансовые изменения.</p>
+    <ul>
+      <li>Какую идею я могу воплотить в жизнь?</li>
+      <li>Что меня мотивирует двигаться вперёд?</li>
+      <li>Какие шаги я могу сделать прямо сейчас?</li>
+    </ul>
   </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">9. Избавление от долгов</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы понять, как справиться с долгами и финансовыми обязательствами.</p>
-      <ul>
-        <li>Что мешает мне избавиться от долгов?</li>
-        <li>Какие ресурсы у меня есть для этого?</li>
-        <li>Какой первый шаг я могу сделать прямо сейчас?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">18. Финансовая самооценка</div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы оценить свою финансовую самооценку.</p>
+    <ul>
+      <li>Как я оцениваю свои финансовые возможности?</li>
+      <li>Что меня поддерживает в этом ощущении?</li>
+      <li>Что можно улучшить?</li>
+    </ul>
   </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">10. Финансовый план</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 3 карты, которые помогут составить план действий для улучшения финансов.</p>
-      <ul>
-        <li>Что нужно сделать в первую очередь?</li>
-        <li>Какие препятствия могут встретиться?</li>
-        <li>Как поддерживать мотивацию на пути к цели?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">19. Деньги и эмоции</div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы понять связь между деньгами и вашими эмоциями.</p>
+    <ul>
+      <li>Какие эмоции у меня связаны с деньгами?</li>
+      <li>Как эти эмоции влияют на мои действия?</li>
+      <li>Что помогает сохранять эмоциональный баланс?</li>
+    </ul>
   </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header">11. Притяжение денег</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту для понимания, как привлечь деньги и изобилие в свою жизнь.</p>
-      <ul>
-        <li>Какие действия помогут мне привлечь деньги?</li>
-        <li>Что сейчас мешает этому процессу?</li>
-        <li>Как изменить энергетику денег вокруг себя?</li>
-      </ul>
-    </div>
+<div class="accordion-item">
+  <div class="accordion-header">20. Деньги и ценности</div>
+  <div class="accordion-content">
+    <p><b>Инструкция:</b> Вытяните 1 карту, чтобы соотнести свои финансовые решения с личными ценностями.</p>
+    <ul>
+      <li>Какие мои ценности отражаются в финансах?</li>
+      <li>Что помогает принимать финансовые решения в гармонии с собой?</li>
+      <li>Какие изменения нужны для большей гармонии?</li>
+    </ul>
   </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">12. Энергия расходов</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы проанализировать энергию и мотивацию своих трат.</p>
-      <ul>
-        <li>На что я трачу деньги чаще всего?</li>
-        <li>Какие траты приносят мне радость или пользу?</li>
-        <li>Какие расходы можно уменьшить или переосмыслить?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">13. Благодарность за изобилие</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы сосредоточиться на том, что уже есть и чему вы благодарны.</p>
-      <ul>
-        <li>За что я благодарен(на) в финансовой сфере?</li>
-        <li>Как благодарность помогает притягивать больше?</li>
-        <li>Как я могу выражать благодарность каждый день?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">14. Финансовые привычки</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы оценить свои финансовые привычки.</p>
-      <ul>
-        <li>Какие привычки поддерживают мой финансовый успех?</li>
-        <li>Какие привычки мешают мне?</li>
-        <li>Что я могу изменить в своём поведении?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">15. Финансовая защита</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы понять, как лучше защитить свои финансы и накопления.</p>
-      <ul>
-        <li>Какие риски нужно учитывать?</li>
-        <li>Какие меры помогут укрепить финансовую безопасность?</li>
-        <li>Что я могу сделать уже сегодня для защиты своих денег?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">16. Финансовые цели на год</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы обозначить главную финансовую цель на год.</p>
-      <ul>
-        <li>Какая цель сейчас самая важная?</li>
-        <li>Что нужно сделать для её достижения?</li>
-        <li>Какие ресурсы можно использовать?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">17. Финансовое вдохновение</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, которая вдохновит вас на финансовые изменения.</p>
-      <ul>
-        <li>Какую идею я могу воплотить в жизнь?</li>
-        <li>Что меня мотивирует двигаться вперёд?</li>
-        <li>Какие шаги я могу сделать прямо сейчас?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">18. Финансовая самооценка</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы оценить свою финансовую самооценку.</p>
-      <ul>
-        <li>Как я оцениваю свои финансовые возможности?</li>
-        <li>Что меня поддерживает в этом ощущении?</li>
-        <li>Что можно улучшить?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">19. Деньги и эмоции</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы понять связь между деньгами и вашими эмоциями.</p>
-      <ul>
-        <li>Какие эмоции у меня связаны с деньгами?</li>
-        <li>Как эти эмоции влияют на мои действия?</li>
-        <li>Что помогает сохранять эмоциональный баланс?</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header">20. Деньги и ценности</div>
-    <div class="accordion-content">
-      <p><b>Инструкция:</b> Вытяните 1 карту, чтобы соотнести свои финансовые решения с личными ценностями.</p>
-      <ul>
-        <li>Какие мои ценности отражаются в финансах?</li>
-        <li>Что помогает принимать финансовые решения в гармонии с собой?</li>
-        <li>Какие изменения нужны для большей гармонии?</li>
-      </ul>
-    </div>
-  </div>
+</div>
 
 </div>
 
